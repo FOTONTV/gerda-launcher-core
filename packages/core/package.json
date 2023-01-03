@@ -1,0 +1,40 @@
+{
+    "name": "@gmcl/core",
+    "version": "2.10.1",
+    "main": "./index.ts",
+    "description": "Minecraft version parsing and game launching.",
+    "engines": {
+      "node": ">=16.0"
+    },
+    "publishConfig": {
+      "access": "public",
+      "main": "./dist/index.js",
+      "module": "./dist/index.esm.js"
+    },
+    "dependencies": {
+      "@gmcl/unzip": "^2.0.0",
+      "yauzl": "^2.10.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GerdaMC/gerda-launcher-core-node.git"
+    },
+    "author": "obraztsov568@gmail.com",
+    "keywords": [
+      "minecraft",
+      "typescript",
+      "minecraft-launcher",
+      "nodejs",
+      "electron"
+    ],
+    "sideEffects": false,
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/GerdaMC/gerda-launcher-core-node/issues"
+    },
+    "homepage": "https://github.com/GerdaMC/gerda-launcher-core-node#readme",
+    "devDependencies": {
+      "@types/node": "^18.11.18",
+      "@types/yauzl": "^2.10.0"
+    }
+  }

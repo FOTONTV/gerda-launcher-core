@@ -1,0 +1,44 @@
+{
+    "name": "@gmcl/unzip",
+    "version": "2.0.0",
+    "main": "./index.ts",
+    "description": "A (hopefully) easy unzip interface based on yauzl",
+    "engines": {
+      "node": ">=10.0"
+    },
+    "publishConfig": {
+      "main": "./dist/index.js",
+      "module": "./dist/index.esm.js",
+      "access": "public"
+    },
+    "peerDependencies": {
+      "yauzl": "^2.10.0"
+    },
+    "devDependencies": {
+      "@types/yauzl": "^2.10.0",
+      "@types/node": "^18.11.18",
+      "@types/uuid": "^9.0.0",
+      "yauzl": "^2.10.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GerdaMC/gerda-launcher-core-node.git"
+    },
+    "author": "obraztsov568@gmail.com",
+    "sideEffects": false,
+    "keywords": [
+      "typescript",
+      "nodejs",
+      "yauzl",
+      "unzip",
+      "zlib",
+      "extract"
+    ],
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/GerdaMC/gerda-launcher-core-node/issues"
+    },
+    "homepage": "https://github.com/GerdaMC/gerda-launcher-core-node#readme",
+    "dependencies": {
+    }
+  }

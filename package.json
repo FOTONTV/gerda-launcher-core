@@ -1,0 +1,41 @@
+{
+    "private": true,
+    "version": "1.0.0",
+    "scripts": {
+        "build": "npm run lint && npm run compile && npm run build:definition && npm run build:readme",
+        "build:clean": "node scripts/clean.js",
+        "build:definition": "node scripts/generate-definition.js",
+        "build:readme": "node scripts/build-readme.js",
+        "compile": "rollup -c rollup.config.js",
+        "compile:watch": "rollup -c rollup.config.js --watch",
+        "compile:dry": "tsc --noEmit",
+        "lint": "eslint packages --ext .ts",
+        "lint:fix": "eslint packages --ext .ts --fix",
+        "test": "jest packages --runInBand",
+        "test:full": "jest packages/installer/install.e2e.test.ts --verbose --runInBand && jest packages --coverage --verbose --runInBand",
+        "dev": "rollup scripts/dev.js",
+        "publish": "node scripts/publish.js",
+        "publish:beta": "node scripts/publish.js beta"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^24.0.0",
+        "@rollup/plugin-html": "^1.0.1",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-typescript": "^10.0.1",
+        "@swc-node/jest": "^1.5.5",
+        "@swc/core": "^1.3.24",
+        "@types/jest": "^29.2.5",
+        "@types/node": "^18.11.18",
+        "@typescript-eslint/eslint-plugin": "^5.47.1",
+        "@typescript-eslint/parser": "^5.47.1",
+        "eslint": "^8.31.0",
+        "jest": "^29.3.1",
+        "rollup": "^3.9.1",
+        "tslib": "^2.4.1",
+        "typescript": "^4.9.4"
+    },
+    "browserslist": [
+        "last 1 Chrome versions"
+    ]
+}
